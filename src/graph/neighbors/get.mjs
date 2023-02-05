@@ -1,6 +1,5 @@
 import { for_each } from './../../../node_modules/m00/src/for/each.mjs';
 import { list_add_if_not_exists } from './../../../node_modules/m00/src/list/add/if/not/exists.mjs';
-import { for_each } from 'm00/src/for/each.mjs';
 export function graph_neighbors_get(graph, v) {
     let neighbors = [];
     for_each(graph, edge => {
