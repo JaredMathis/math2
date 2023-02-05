@@ -7,5 +7,6 @@ export function graph_connected_new(vertex_count) {
     arguments_assert(arguments, number_positive_is);
     let result = graph_tree_new(vertex_count);
     let additional = graph_random_new(vertex_count);
-    list_concat_front(additional, result);
+    list_concat_front(result, additional);
+    return result;
 }
