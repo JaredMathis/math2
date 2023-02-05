@@ -15,7 +15,7 @@ export function graph_cycle_new(vertex_count) {
         let next = list_get_wrapped(shuffled, key + 1);
         result.push([
             current,
-            next
+            shuffled[next]
         ]);
     });
     return result;
