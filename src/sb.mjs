@@ -15,10 +15,6 @@ export function sb() {
         let next_current = graph_traverse_tree(g, previous, current);
         previous = current;
         current = next_current;
-        console.log({
-            previous,
-            current
-        });
         list_add_if_not_exists(found, current);
     }
 }
