@@ -6,4 +6,5 @@ export function graph_traverse_tree(graph, previous, current) {
     if (neighbors_larger.length) {
         return list_min(neighbors_larger);
     }
+    return list_min(neighbors);
 }
