@@ -12,10 +12,10 @@ export function graph_cycle_new(vertex_count) {
     let shuffled = list_copy(vertices);
     list_shuffle(shuffled);
     for_each(shuffled, (current, key) => {
-        let next = list_get_wrapped(shuffled, key + 1);
+        let next = list_get_wrapped(shuffled, parseInt(key, 10) + 1);
         result.push([
             current,
-            shuffled[next]
+            next
         ]);
     });
     return result;
