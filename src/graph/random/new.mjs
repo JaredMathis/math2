@@ -17,4 +17,5 @@ export function graph_random_new(vertex_count) {
             }
         }
     });
+    return result;
 }
