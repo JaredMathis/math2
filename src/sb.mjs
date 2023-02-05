@@ -1,3 +1,4 @@
+import { list_add_if_not_exists } from './../node_modules/m00/src/list/add/if/not/exists.mjs';
 import { log } from './../node_modules/m00/src/log.mjs';
 import { list_first } from './../node_modules/m00/src/list/first.mjs';
 import { graph_neighbors_get } from './graph/neighbors/get.mjs';
@@ -14,5 +15,10 @@ export function sb() {
         let next_current = graph_traverse_tree(g, previous, current);
         previous = current;
         current = next_current;
+        console.log({
+            previous,
+            current
+        });
+        list_add_if_not_exists(found, current);
     }
 }
