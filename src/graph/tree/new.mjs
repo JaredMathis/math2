@@ -6,4 +6,8 @@ export function graph_tree_new(vertex_count) {
     arguments_assert(arguments, number_positive_is);
     let vertices = range(vertex_count);
     let remaining = list_copy_shuffle(vertices);
+    let connected = [remaining.pop()];
+    while (remaining.length) {
+        let current = remaining.pop();
+    }
 }
