@@ -5,7 +5,7 @@ import { list_first } from './../node_modules/m00/src/list/first.mjs';
 import { graph_neighbors_get } from './graph/neighbors/get.mjs';
 import { graph_traverse_tree } from './graph/traverse/tree.mjs';
 export function sb() {
-    let size = 500;
+    let size = 50;
     let g = graph_connected_new(size);
     console.log(g);
     let found = [];
