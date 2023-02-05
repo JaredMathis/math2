@@ -5,7 +5,6 @@ import { list_add_if_not_exists } from './../node_modules/m00/src/list/add/if/no
 import { list_first } from './../node_modules/m00/src/list/first.mjs';
 import { graph_neighbors_get } from './graph/neighbors/get.mjs';
 import { graph_traverse_tree } from './graph/traverse/tree.mjs';
-import { for_each } from 'm00/src/for/each.mjs';
 export function sb() {
     let size = 50;
     let trials = 100;
